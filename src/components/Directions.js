@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
 
 const Directions = ({ directions }) => {
-    console.log(directions);
     return (
         <Box 
             sx={{ 
@@ -20,7 +19,7 @@ const Directions = ({ directions }) => {
                     }}
                 >
                     {directions.map((step, index) => (
-                        <Typography sx={{ margin: '20px 0px', display: 'flex', 'alignItems': 'baseline'}} >
+                        <Box key={index} sx={{ margin: '20px 0px', display: 'flex', 'alignItems': 'baseline'}} >
                             <Chip 
                                 sx={{ 
                                     background: '#d32f2f',
@@ -30,7 +29,8 @@ const Directions = ({ directions }) => {
                                 label={`Step ${index + 1}`} 
                             />
                             <span style={{ padding: '20px', fontSize: '17px' }}>{step.instructions}</span>
-                        </Typography>
+                            <span style={{ color: 'orange', fontVariant: 'small-caps', fontSize: '17px' }}>{step.optional && 'optional'}</span>
+                        </Box>
                     ))}
                 </Box>
         </Box>

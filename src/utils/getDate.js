@@ -17,6 +17,9 @@ export default data => {
     const [month, day, year] = date.split('/');
 
     function ordinal_suffix_of(i) {
+        if (i < 10) {
+            i = String(i).split('')[1];
+        }
         var j = i % 10,
             k = i % 100;
         if (j == 1 && k != 11) {
