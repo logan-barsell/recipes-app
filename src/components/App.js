@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import TopNav from './TopNav';
 import RecipeList from './RecipeList';
 import RecipeDetails from './RecipeDetails';
+import CreateRecipe from './CreateRecipe';
 import axios from 'axios';
 
 export const RecipeContext = createContext();
@@ -28,6 +29,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<RecipeList />} />
             <Route path="/recipe/:id" element={<RecipeDetails />} />
+            <Route path="/createRecipe" element={<CreateRecipe />} />
           </Routes>
         </RecipeContext.Provider>
       </Router>

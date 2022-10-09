@@ -9,7 +9,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import getDate from '../utils/getDate';
-import axios from 'axios';
 
 const RecipeDetails = () => {
     const { selectedRecipe, setSelectedRecipe, recipes } = useContext(RecipeContext);
