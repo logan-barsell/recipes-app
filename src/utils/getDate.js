@@ -17,26 +17,26 @@ export default data => {
     const [month, day, year] = date.split('/');
 
     function ordinal_suffix_of(i) {
-        if (i < 10) {
+        if (i < 10 && String(i).length > 1) {
             i = String(i).split('')[1];
         }
         var j = i % 10,
             k = i % 100;
-        if (j == 1 && k != 11) {
+        if (j === 1 && k !== 11) {
             return i + "st";
         }
-        if (j == 2 && k != 12) {
+        if (j === 2 && k !== 12) {
             return i + "nd";
         }
-        if (j == 3 && k != 13) {
+        if (j === 3 && k !== 13) {
             return i + "rd";
         }
         return i + "th";
     }
     const newDay = ordinal_suffix_of(day);
 
-    const newDate = `${months[month]} ${newDay}, ${year}`;
-    return newDate
+    const newDate = `${months[month]} ${newDay}, ${year.replace(',', '')}`;
+    return newDate;
 };
 
 

@@ -1,7 +1,12 @@
 export const recipeLayout = {
-    uuid: Math.floor(Math.random() * 1000),
+    uuid: String(Math.floor(Math.random() * 1000)),
     title: "",
     description: "",
+    images: {
+        "full": "/img/placeholder.jpg",
+        "medium": "/img/placeholder.jpg",
+        "small": "/img/placeholder.jpg"
+    },
     servings: "",
     prepTime: "",
     cookTime: "",
@@ -9,11 +14,10 @@ export const recipeLayout = {
     editDate: "",
     ingredients: [
         {
-            uuid: Math.floor(Math.random() * 1000),
-            amount: {
-                int: "",
-                frac: ""
-            },
+            uuid: String(Math.floor(Math.random() * 1000)),
+            int: 0,
+            frac: 0,
+            amount: "",
             measurement: "",
             name: ""
         },
@@ -28,10 +32,9 @@ export const recipeLayout = {
 
 export const ingredientLayout = {
     uuid: "",
-    amount: {
-        int: "",
-        frac: ""
-    },
+    int: 0,
+    frac: 0,
+    amount: "",
     measurement: "",
     name: ""
 }

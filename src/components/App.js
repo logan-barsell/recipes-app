@@ -1,10 +1,12 @@
 import React, { createContext, useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import TopNav from './TopNav';
+import TopNav from './Navbars/TopNav';
 import RecipeList from './RecipeList';
-import RecipeDetails from './RecipeDetails';
+import RecipeDetails from './FullRecipe/RecipeDetails';
 import CreateRecipe from './CreateRecipe';
 import axios from 'axios';
+import MyRecipes from './MyRecipes';
+import Footer from './Footer';
 
 export const RecipeContext = createContext();
 
@@ -24,13 +26,15 @@ const App = () => {
 
   return (
       <Router>
-        <RecipeContext.Provider value={{ selectedRecipe, setSelectedRecipe, recipes }}>
+        <RecipeContext.Provider value={{ selectedRecipe, setSelectedRecipe, recipes, setRecipes }}>
           <TopNav />
           <Routes>
             <Route path="/" element={<RecipeList />} />
             <Route path="/recipe/:id" element={<RecipeDetails />} />
             <Route path="/createRecipe" element={<CreateRecipe />} />
+            <Route path="/myRecipes" element={<MyRecipes />} />
           </Routes>
+          <Footer />
         </RecipeContext.Provider>
       </Router>
   );

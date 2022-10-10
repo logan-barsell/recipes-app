@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import axios from 'axios';
-import { decimalToFraction } from '../utils/decimalToFraction';
+import { decimalToFraction } from '../../utils/decimalToFraction';
 
 const Ingredients = ({ ingredients }) => {
     const [specials, setSpecials] = useState([]);
@@ -79,7 +79,7 @@ const Ingredients = ({ ingredients }) => {
         },
       }));
 
-   
+    console.log(decimalToFraction(0.666));
 
     return (
         <Box 
@@ -110,7 +110,7 @@ const Ingredients = ({ ingredients }) => {
                         </span>
                         {isSpecial(ingredient.uuid) &&
                             <StyledTooltip title={renderSpecial(ingredient.uuid)} placement="bottom">
-                                <Button color="error">special</Button>
+                                <Button sx={{ marginLeft: '8px' }} color="error">special</Button>
                             </StyledTooltip>
                         }
                     </Typography>

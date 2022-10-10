@@ -26,12 +26,14 @@ const Recipe = ({ recipe }) => {
           sx={{ '&:hover': {opacity: '0.7'}, transition: '150ms ease'}}
           />
       </Link>
-      <CardMedia
-        component='img'
-        height='194'
-        image={recipe.images.medium}
-        alt='Paella dish'
-      />
+      {recipe.images &&
+        <CardMedia
+          component='img'
+          height='194'
+          image={recipe.images.medium}
+          alt='Paella dish'
+        />
+      }
       <CardContent>
         <Typography
           variant='body2'

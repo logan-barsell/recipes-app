@@ -480,6 +480,112 @@
           "optional": false
         }
       ]
+    },
+    {
+      "uuid": "844",
+      "title": "Sticky Apricot Chicken",
+      "description": "A quick and easy twist on Aussie classic apricot chicken.",
+      "images": {
+        "full": "/img/placeholder.jpg",
+        "medium": "/img/placeholder.jpg",
+        "small": "/img/placeholder.jpg"
+      },
+      "servings": 6,
+      "prepTime": "10",
+      "cookTime": "20",
+      "postDate": "10/10/2022, 12:14:07 AM",
+      "editDate": "10/10/2022, 12:14:07 AM",
+      "ingredients": [
+        {
+          "uuid": "778",
+          "int": 1,
+          "frac": 0,
+          "amount": 1,
+          "measurement": "Tbsp.",
+          "name": "olive oil"
+        },
+        {
+          "uuid": 1665385855540,
+          "int": 1,
+          "frac": 0.5,
+          "amount": 1.5,
+          "measurement": "lb.",
+          "name": "chicken tenderloins"
+        },
+        {
+          "uuid": 1665385870718,
+          "int": 0,
+          "frac": 0.333,
+          "amount": 0.333,
+          "measurement": "cup",
+          "name": "apricot jam"
+        },
+        {
+          "uuid": 1665385890802,
+          "int": 2,
+          "frac": 0.5,
+          "amount": 2.5,
+          "measurement": "tsp.",
+          "name": "soy sauce"
+        },
+        {
+          "uuid": 1665385911191,
+          "int": 2,
+          "frac": 0,
+          "amount": 2,
+          "measurement": "Tbsp.",
+          "name": "sriracha chili sauce"
+        },
+        {
+          "uuid": 1665385933744,
+          "int": 0,
+          "frac": 0.25,
+          "amount": 0.25,
+          "measurement": "cup",
+          "name": "rice wine vinegar"
+        },
+        {
+          "uuid": 1665385958945,
+          "int": 1,
+          "frac": 0,
+          "amount": 1,
+          "measurement": "small bunch, fresh",
+          "name": "coriander sprigs,"
+        },
+        {
+          "uuid": 1665385984464,
+          "int": 1,
+          "frac": 0,
+          "amount": 1,
+          "measurement": "cup, cooked",
+          "name": "brown rice"
+        },
+        {
+          "uuid": 1665385998161,
+          "int": 1,
+          "frac": 0,
+          "amount": 1,
+          "measurement": "package, 12 oz.",
+          "name": "zucchini noodles"
+        }
+      ],
+      "directions": [
+        {
+          "instructions": "Heat the oil in a large frying pan over high heat. Cook the chicken for 3 minutes each side or until golden. Transfer to a plate.",
+          "optional": false
+        },
+        {
+          "uuid": 1665386031416,
+          "instructions": "Reduce heat to low. Add the jam , soy sauce , sriracha and vinegar to the pan. Cook stirring until the jam melts and the mixture is sticky. Return the chicken to the pan and turn to coat.",
+          "optional": false
+        },
+        {
+          "uuid": 1665386038290,
+          "instructions": "Serve the chicken sprinkled with coriander , with rice and zucchini.",
+          "optional": false
+        }
+      ],
+      "myRecipe": true
     }
   ],
   "specials": [
