@@ -29,7 +29,7 @@ const RecipeList = () => {
             </Typography>
             <Divider sx={{ mb: '50px' }} />
             <Grid container rowSpacing={5} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                {allRecipes.filter(r => !r.myRecipe).map((recipe, index) => (
+                {allRecipes.map((recipe, index) => (
                     <Grid key={recipe.uuid} item xs={12} sm={6} md={4}>
                         <Recipe recipe={recipe}/>
                     </Grid>
